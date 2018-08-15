@@ -1,0 +1,515 @@
+
+body{background-color:#f1f1f1;}
+P{    text-align: justify;font-size:1.5rem;}
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* --------------------------------------------------------
+Header
+-----------------------------------------------------------*/
+.logo {
+  padding-top: 20px;
+}
+.main_menu .navbar-collapse.collapse {
+    padding-left: 0;
+}
+.main_header ul.nav.navbar-nav li > a {
+    font-size: 14px;
+    margin: 22px 0;
+    padding: 8px 14px;
+    text-transform: uppercase;
+}
+.main_header ul.nav.navbar-nav li:last-child a{
+    margin-left: 14px;
+    padding: 8px 20px;
+    background:#EC0763;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-family: 'latosemibold';
+    -webkit-box-shadow: -1px 3px 18px -1px rgba(112,112,112,0.86);
+    -moz-box-shadow: -1px 3px 18px -1px rgba(112,112,112,0.86);
+    box-shadow: -1px 3px 18px -1px rgba(112,112,112,0.86);
+}
+.section-padding {
+    padding: 30px 0;
+}
+
+/* --------------------------------------------------------
+Footer
+-----------------------------------------------------------*/
+.footer_bottom{
+    background: #222222;
+    padding: 15px 0;
+    position: relative;
+}
+.footer_bottom p{
+    margin: 0;
+    font-size: 11px;
+    color: #f2f0f0;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.footer_menu ul{
+    margin: 0;
+    text-align: right;
+}
+
+.footer_menu ul li:last-child{
+    border-right: 0px;
+}
+.footer_menu ul li{
+    display: inline-block;
+    border-right: 1px solid #f2f0f0;
+    line-height: 10px;
+}
+.footer_menu ul li a{
+    display: block;
+    text-transform: uppercase;
+    color: #f2f0f0;
+    font-size: 11px;
+    margin: 0 15px;
+}
+.footer_menu ul li a:hover,.main_header ul.nav.navbar-nav li > a:hover{
+    color: #fb6d93;
+}
+
+.back_nav{
+    background: rgba(251, 109, 147, .95);
+    overflow: hidden;
+}
+.back_nav h2{
+    font-size: 18px;
+    margin: 0 0 0 15px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 39px;
+    letter-spacing: 1px;
+}
+.back_nav ul{
+    margin: 0 15px 0 0;
+}
+.back_nav ul li{
+    display: inline-block;
+    font-family: 'Playfair Display';
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 39px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 19px;
+}
+.back_nav ul li a{
+    display: block;
+    color: #fff;
+    position: relative;
+}
+.back_nav ul li a:hover{
+    color: #000;
+}
+.back_nav ul li a:after {
+  content: "/";
+  position: absolute;
+  right: -17px;
+  top: 1px;
+    color: #fff;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------
+Home Page
+-----------------------------------------------------------*/
+
+.vision{width:450px;height: 150px; border:1px dashed black;text-align: center;padding-top:50px;font-weight:bold;}
+.intro{padding:0 60px;}
+.img-btm{margin-bottom:10px;}
+.img-btm > div > img{margin-left:45px;}
+.shead{text-align: left;padding-bottom: 20px;}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------
+Accommodation Page
+-----------------------------------------------------------*/
+.fix_p_r{}
+.roomArea{background: #f8f8f8;}
+.single_room_item{border-bottom: 1px solid #ececec;margin: 0;padding: 33px 0 30px;}
+.room_photo{  }
+.room-title h3{padding: 5px 28px;background: #B40432;color: #fff;font-size: 20px;-webkit-transition: .5s;transition: .5s;margin-top:-250px;}
+.room-title,.ttl-link{position: absolute;z-index: 9;}
+
+.photo_cap{
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.photo_cap a.lightbox {
+    color: #fff;
+    display: block;
+    font-size: 90px;
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+.photo_cap a.lightbox:hover{
+    color: #fb6d93;
+}
+.room_photo:hover .photo_cap{
+    opacity: 1;
+}
+.room_photo:hover .photo_cap a.lightbox{
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+}
+
+.room_photo:hover .room_cat_name h3{
+    border-bottom-right-radius: 20px;
+}
+.room_photo:hover .room_dtls_link a{
+    border-top-left-radius: 20px;
+}
+.room_title h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.view_all{
+    text-align: center;
+    margin-top:60px;
+    margin-bottom:30px;
+    background-color:#f2f2f2;
+}
+.view_all>a{
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d11204), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #d11204 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #d11204 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #d11204 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #d11204 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #d11204 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d11204', endColorstr='#c62d1f',GradientType=0);
+	background-color:#d11204;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+
+}
+
+.ttl-link a {
+	margin:1em 8.5em;
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #4c7d37;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #4c7d37;
+	box-shadow:inset 0px 1px 0px 0px #4c7d37;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #339c02), color-stop(1, #3e9612));
+	background:-moz-linear-gradient(top, #339c02 5%, #3e9612 100%);
+	background:-webkit-linear-gradient(top, #339c02 5%, #3e9612 100%);
+	background:-o-linear-gradient(top, #339c02 5%, #3e9612 100%);
+	background:-ms-linear-gradient(top, #339c02 5%, #3e9612 100%);
+	background:linear-gradient(to bottom, #339c02 5%, #3e9612 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#339c02', endColorstr='#3e9612',GradientType=0);
+	background-color:#339c02;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #2c8500;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #61a137;
+}
+
+.ttl-link a:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #297502), color-stop(1, #339c02));
+	background:-moz-linear-gradient(top, #297502 5%, #339c02 100%);
+	background:-webkit-linear-gradient(top, #297502 5%, #339c02 100%);
+	background:-o-linear-gradient(top, #297502 5%, #339c02 100%);
+	background:-ms-linear-gradient(top, #297502 5%, #339c02 100%);
+	background:linear-gradient(to bottom, #297502 5%, #339c02 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#297502', endColorstr='#339c02',GradientType=0);
+	background-color:#297502;
+}
+
+/* --------------------------------------------------------
+Facilities us Page
+-----------------------------------------------------------*/
+.faci-item{
+    margin-bottom: 30px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+
+.faci-icon{
+    position: relative;
+    overflow: hidden;
+}
+.faci-icon:after{
+    position: absolute;
+    top: -31px;
+    left: -31px;
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    background: #6bcfef;
+    content: "";
+}
+.faci-icon img {
+    margin: 10px 10px 30px;  
+    position: relative;
+    z-index: 1;
+}
+.faci-info {
+  margin-left: -10px;
+  padding: 20px 0 10px;
+}
+.faci-info h3{
+    font-family: "latomedium";
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.faci-info p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.faci-item:hover .faci-icon:after {
+    background: #ff698f;
+    height: 55px;
+    left: 0;
+    top: 0;
+    width: 55px;
+}
+.faci-item:hover .faci-icon img {
+    margin: 17px 17px 30px;
+}
+
+
+
+/* --------------------------------------------------------
+Contact Page
+-----------------------------------------------------------*/
+
+.contact_form1 h1{
+    color: #222222;
+    margin-bottom: 20px;
+}
+.contact_form1 p{
+    font-size: 16px;
+    font-family: 'latomedium';
+    line-height: 28px;
+    margin-bottom: 37px;
+    margin-right: 10px;
+}
+.contact_form label, .contact_form input{
+    display: block;
+}
+.contact_form input, .contact_form textarea{
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    text-indent: 15px;
+}
+.contact_form label{
+    font-size: 13px;
+    font-family: 'latomedium';
+    color: #777777;
+}
+.contact_form label span{
+    color: #ff0000;
+}
+.contact_form input{
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 21px;
+    margin-top: 4px;
+}
+.contact_form textarea{
+    height: 216px;
+    padding-top: 10px;
+}
+.contact_details h1{
+    margin-bottom: 30px;
+    color: #222222;
+}
+.contact_details ul li{
+    overflow: hidden;
+    display: block;
+    color: #777777;
+    margin-bottom: 34px;
+}
+.contact_details ul li i{
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 21px;
+    padding: 10px;
+    color: #272727;
+}
+.contact_details ul li a{
+    display: block;
+    color: #777777;
+    font-size: 16px;
+}
+.contact_details ul li a:hover{
+    color: #fb6d93;
+}
+.contact_form_side form  input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------
+Reservation Page
+-----------------------------------------------------------*/
+
+#output {
+    background-color: #c5edf3;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    border: 2px solid #009688;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+#newPublish {
+    background-color: #c5edf3;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    border: 2px solid #009688;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+.box {
+    background-color: #f7f7f7;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 40px 60px;
+}
+#details_info {
+    background-color: #f7f7f7;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    border: 1px solid #cccccc;
+    font-family: sans-serif;
+    line-height: 1.8;
+    margin-left: 90px;
+}
+.box3 {
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: gainsboro;
+}
+.box11 {
+    margin-top: 80px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: gainsboro;
+    line-height: 2.5;
+}
+.web_design_box {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: #d9edf7;
+    box-shadow: 3px 5px 10px #318f86;
+}
+.hotel_reserve_box {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+.online_food_delivery_box {
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    background-color: #d4c0b9;
+    box-shadow: 3px 5px 10px #714c4a;
+}
+.result_box {
+    margin-top: 15%;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    background-color: #d4c0b9;
+    box-shadow: 3px 5px 10px #8BC34A;
+}
+.result_box_text {
+    color: #232222;
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+}
+.result_box_text span {
+    color: #614136;
+    font-size: 26px;
+    text-align: center;
+}

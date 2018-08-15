@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        
+        <!-- Google/Custom font -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        
+
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Font awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+        <link rel="shortcut icon" type="image/png" href="img/favi-con.png"/>  
+    </head>
+    
+    <body>
+        
+        <header class="header_area" style="background-color: white;">     
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="main_header">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo1.png" alt="Site Logo"></a>                     
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-10 nav_area">
+                                <nav class="main_menu">
+                                    <div class="navbar-collapse collapse"> 
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="accommodation.html">Accommodation</a></li>
+                                            <li><a href="Facilities&Services.html">Facilities</a></li>
+                                            <li><a href="Location&ContactUs.html">ContactUs</a></li>
+                                            <li><a href="Reservation.html">Reservation</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        
+   <div class="container" style="background-color: white;padding:0;">
+
+           <section>
+            <div class="container">
+
+                <div class="back_nav">
+                    <div class="col-sm-5">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="col-sm-7">
+                        <ul class="text_a_r" style="text-align: right;">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Location and ContactUs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <div class="container">
+             <div class="hotel_reserve_box card">
+         <h3> Hotel Reservation Form </h3><br>
+         <form>
+             <div class="form-group">
+                 <label>Room/Suite Type</label>
+                 <select class="form-control" id="room_type" onchange="finalCost()">
+                     <option value="0" selected>Select Room/Suite </option>
+                     <option value="1"> Standard </option>
+                     <option value="2"> Deluxe </option>
+                     <option value="3"> Superior Deluxe </option>
+                     <option value="4"> Premier Deluxe  </option>
+                     <option value="5"> Executive Suite </option>
+                     <option value="6"> Junior Suite </option>
+                     <option value="7"> Honeymoon Suite </option>
+                 </select>
+             </div>
+             <div class="form-group">
+                 <label>Number of room/suite</label>
+                 <select class="form-control" id="room_number" onchange="finalCost()">
+                     <option value="0"> 0 </option>
+                     <option value="1"> 1 </option>
+                     <option value="2"> 2 </option>
+                     <option value="3"> 3 </option>
+                     <option value="4"> 4 </option>
+                     <option value="5"> 5 </option>
+                     <option value="6"> 6 </option>
+                     <option value="7"> 7 </option>
+                 </select>
+             </div>
+             <div class="form-group">
+                 <label>Number of persons</label>
+                 <select class="form-control" id="person_number" onchange="finalCost()">
+                     <option value="0"> 0 </option>
+                     <option value="1"> 1 </option>
+                     <option value="2"> 2 </option>
+                     <option value="3"> 3 </option>
+                     <option value="4"> 4 </option>
+                     <option value="5"> 5 </option>
+                     <option value="6"> 6 </option>
+                     <option value="7"> 7 </option>
+                 </select>
+             </div>
+             <div class="form-group">
+                 <label>Number of children</label>
+                 <select class="form-control" id="child_number" onchange="finalCost()">
+                     <option value="0"> 0 </option>
+                     <option value="1"> 1 </option>
+                     <option value="2"> 2 </option>
+                     <option value="3"> 3 </option>
+                     <option value="4"> 4 </option>
+                     <option value="5"> 5 </option>
+                     <option value="6"> 6 </option>
+                     <option value="7"> 7 </option>
+                 </select>
+             </div>
+             <div class="form-group">
+                 <label>Restaurant facilities?</label>
+                 <select class="form-control" id="res_facilities" onchange="finalCost();">
+                     <option value="0" selected> Do you want restaurant facilities? </option>
+                     <option value="2"> Yes </option>
+                     <option value="0"> No </option>
+                 </select>
+             </div><br>
+             <div class="form-group">
+                 <label>Total Cost (RM) : </label>
+                 <a href=""><span id="result" style="background-color: #7527b0;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span></a>
+             </div>
+         </form>
+     </div>
+         </div>
+        </div>
+        <br>
+
+        <footer class="footer_area">
+            
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p>© 2017 Lotus Hotel. All rights reserved</p>
+                        </div>
+                        <div class="col-sm-8">
+                            <nav class="footer_menu">
+                                <ul>
+                                    
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="accommodation.html">Accommodation</a></li>
+                                    <li><a href="Facilities&Services.html">Facilities</a></li>
+                                    <li><a href="Location&ContactUs.html">ContactUs</a></li>
+                                    <li><a href="Reservation.html">Reservation</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+        ​​  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+        ​<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+         <script>
+        function finalCost(){
+            var roomType = document.getElementById("room_type").value;
+            var roomNum = document.getElementById("room_number").value;
+            var personNum = document.getElementById("person_number").value;
+            var childNum = document.getElementById("child_number").value;
+            var resFacilities = document.getElementById("res_facilities").value;
+
+            var total = (parseInt(roomType)*10) + ((roomNum)*2) + ((personNum)*3) + ((childNum)*2) + ((resFacilities)*5)
+
+            document.getElementById("result").innerHTML = total;
+        }
+    </script>
+
+    </script>
+ 
+    </body>
+</html>
